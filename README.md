@@ -1,43 +1,38 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## create-react-app
 
-In the project directory, you can run:
+npx create-react-app react-demo —typescript
+  默认情况下，生成的项目支持所有现代浏览器。对Internet Explorer 9、10和11的支持需要polyfill。
+通过npm run eject   ， 暴露webpack配置
+学习网站：https://create-react-app.dev/docs/getting-started
 
-### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 安装其他库
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1、路由
+react-router：提供了一些router的核心api，包括Router, Route, Switch等，但是它没有提供dom操作进行跳转的api。
+react-router-dom：提供了HashRouter、BrowserRouter, Route, Link等api ,我们可以通过dom的事件控制路由
 
-### `npm test`
+2、HTTP
+axios：Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。
+proxy：参照create-react-app官网推荐库——http-proxy-middleware
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3、UI
+Ant-design：服务于企业级产品的设计体系
+sass: npm install node-sass --save(因为新版本已经集成了 sass 的处理了，因此，就不需要额外的配置有关 sass 的内容了。但是，如果需要在项目中使用 sass 的话，还是需要安装依赖包的。)
 
-### `npm run build`
+4、状态管理
+redux：数据处理中心
+react-redux：连接组件和数据中心，也就是把React和Redux联系起来
+redux-thunk、redux-saga：用来做异步操作
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### 启动
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+localhost:3000
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
+## 其他
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
